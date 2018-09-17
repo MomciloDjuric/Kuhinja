@@ -5,6 +5,52 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="css/homepage-style.css">
+	<style>
+	.right{
+	position: absolute;
+	right: 0px;
+	width: 500px;
+	border: dashed;
+	border-color: white;
+	padding: 10px;
+	}
+	
+	.button{
+	display: inline-block;
+	border-radius: 4px;
+	background-color: #FFFFFF
+	border: none;
+	collor: #000000;
+	text-align: center;
+	font-size: 15px;
+	padding: 10px;
+	width: 100px;
+	transition: all 0.5s;
+	margin: 2px;
+	}
+	.button span{
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+	}
+	.button span:after{
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+	}
+	.button:hover span{
+	padding-right: 25px;
+	}
+	.button:hover span:after{
+	opacity: 1;
+	right: 0;
+	}
+	
+	</style>
 </head>
 
 <body style="background-image:url('images/Healthy_food.jpg');background-size:100%,100%">
@@ -30,10 +76,18 @@
 	</li>
 	</ul>
 
-<p style="color:white"> Namirnice:</p>
+<p style="color:white"> Namirnice:</p> 
+
+	<div class="right">
+		<p style="color:white">Odve možete naći sve što Vam je potrebno od uputstva ukoliko ste se odlučini na pripremanje bilo kakvog obroka, u skladu sa namirnicama koje posedujete ili ukoliko Vam je potrebna ideja. Ukoliko i niste još, uz naše recepte Vam se može otvoriti apetit.</p>
+		</div>
 
 <form>
   <input type="text" name="Search" placeholder="Unesite namirnicu..">
 </form>
+
+<button class="button" style="vertical-align:middle">
+<span>Gotovo </span></button>
+
 </body>
 </html>
